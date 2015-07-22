@@ -1,0 +1,55 @@
+<head>
+    <!-- Lovingly crafted by Rohan Likhite -->
+    <title>GitChat</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/client.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mainContent">
+            <div class="one-half column">
+                <h1>GitChat</h1>
+            </div>
+            <div class="one-half column">
+                <div class="loginButtons">
+                    {{> loginButtons }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-half column">
+                <div id="header">
+                    {{> welcome }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="messages" style="display:none">
+                {{> messages }}
+            </div>
+        </div>
+    </div>
+    <div id="inputBar" style="display:none">
+        <div class="container">
+            {{> input }}
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+</body>
+<template name="welcome">
+    <p>
+        /**GitChat is only available to developers who have a GitHub account. Please login to view ongoing messages**/
+    </p>
+</template>
+<template name="input">
+    <p>Message:
+        <input type="text" id="message">
+    </p>
+</template>
+<template name="messages">
+    {{#each messages}}
+    <span class="name">{{name}} : </span><span class="message">{{message}}</span>
+    <br> {{/each}}
+</template>

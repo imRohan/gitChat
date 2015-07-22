@@ -1,0 +1,32 @@
+#body {
+    font-family: courier !important;
+}
+
+.mainContent {
+    margin-top: 5%;
+}
+
+.loginButtons {
+    float: right;
+}
+
+#inputBar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #111111;
+    height: 10%;
+}
+
+#header {
+    color: #706f6f;
+}
+
+.name {
+    color: #C23824;
+    font-weight: 700;
+}
+
+.message {
+    color: #706f6f;
+}
