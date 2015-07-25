@@ -10,12 +10,71 @@
     float: right;
 }
 
+#headerBar {
+    width: 100%;
+    position: fixed;
+    height: 3px;
+    top: 0 !important;
+    background: linear-gradient(270deg, #26c738, #26c785, #26c1c7);
+    background-size: 600% 600%;
+    -webkit-animation: gitChatHeader 30s ease infinite;
+    -moz-animation: gitChatHeader 30s ease infinite;
+    animation: gitChatHeader 30s ease infinite;
+}
+
+@-webkit-keyframes gitChatHeader {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes gitChatHeader {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes gitChatHeader {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
 #inputBar {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    background-color: #111111;
+    height: 40px;
+    -webkit-box-shadow: 0px -7px 40px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -7px 40px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -7px 40px 5px rgba(0, 0, 0, 0.75);
+}
+
+#footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #111111;
-    height: 10%;
+    background-color: #000000;
+    height: 20px;
 }
 
 #header {

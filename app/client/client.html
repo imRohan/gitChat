@@ -7,6 +7,8 @@
 </head>
 
 <body>
+    <div id="headerBar">
+    </div>
     <div class="container">
         <div class="row mainContent">
             <div class="one-half column">
@@ -36,6 +38,8 @@
             {{> input }}
         </div>
     </div>
+    <div id="footer">
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 </body>
 <template name="welcome">
@@ -43,13 +47,13 @@
         /**GitChat is only available to developers who have a GitHub account. Please login to view ongoing messages**/
     </p>
 </template>
-<template name="input">
-    <p>Message:
-        <input type="text" id="message">
-    </p>
-</template>
 <template name="messages">
     {{#each messages}}
     <span class="name">{{name}} : </span><span class="message">{{message}}</span>
     <br> {{/each}}
+</template>
+<template name="input">
+    <div class="nine columns">
+        <input type="text" id="message">
+    </div>
 </template>
