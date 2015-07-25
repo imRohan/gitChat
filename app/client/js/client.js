@@ -38,7 +38,7 @@ function userLog(state) {
 
 Template.messages.helpers({
     messages: function() {
-        return localCollection.find({}, {
+        return Messages.find({}, {
             sort: {
                 time: -1
             }
@@ -54,7 +54,7 @@ Template.input.events = {
             var message = document.getElementById('message');
 
             if (message.value != '') {
-                localCollection.insert({
+                Messages.insert({
                     name: name,
                     message: message.value,
                     time: Date.now(),
