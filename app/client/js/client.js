@@ -1,6 +1,7 @@
 /**
  * Templates
  */
+Messages = new Meteor.Collection("Messages");
 
 Template.messages.rendered = function() {
     if (!this._rendered) {
