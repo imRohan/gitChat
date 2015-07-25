@@ -1,2 +1,6 @@
 # gitChat
-A chat client only open to developers 
+Ongoing build.
+
+A chat client using mongodb meteor and featuring oAuth for GitHub
+
+ 
