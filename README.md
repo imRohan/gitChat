@@ -1,6 +1,8 @@
 # gitChat
-Ongoing build.
+Test project.
 
-A chat client using mongodb meteor and featuring oAuth for GitHub
+A chat client built using mongodb, meteor with GitHub authentication
+
+[Live Demo](http://gitchat.meteor.com)
 
  
